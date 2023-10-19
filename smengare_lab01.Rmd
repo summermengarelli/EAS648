@@ -1,0 +1,34 @@
+---
+title: "EAS648 Lab 01"
+author: "Summer Mengarelli"
+date: "2023-10-19"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+### loading libraries
+library(ggplot2)
+library(sf)
+library(tidyverse)
+
+```
+
+### Overview of Data & Purpose of Project
+
+The data used in this lab is [eBird data](https://ebird.org/data/download) for the country of Spain from March to May 2020. I'm in the early stages of planning a research project with a lab-mate (in Brian Weeks' lab). Our idea is to use data submitted on eBird, a citizen science platform, as a proxy to study the behavior of birders (rather than the explicitly designed purpose of studying birds). One direction we want to take is a sentiment analysis of the comments field in the data, so hopefully I will get to explore that option in the semantic analysis portion of this class. Another direction is to look at several variables that proxy sampling effort, like *duration of birding event*, *distance traveled during birding event*, and *size of birding group* and study whether and how sampling effort was affected by lockdown restrictions related to the Covid-19 pandemic. 
+\
+\
+
+![Screenshot captured 10/19/2023 of eBird user statistics. Source: eBird](./ebird_screenshot.png "")
+
+
+
+\
+While we have yet to pin down a spatial and temporal extent for the broader project, for the purposes of this assignment I am looking at all of Spain, March - May 2019.
+
+
